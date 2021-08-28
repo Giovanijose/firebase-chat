@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "chat-4dbdb": {
+      "hosting": {
+        "firebase-chat": [
+          "chat-4dbdb"
+        ]
+      }
+    }
+  }
+}

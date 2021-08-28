@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "5e662016-97aa-4937-acf1-f40c1dee00a9"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -123,6 +126,10 @@
               "devServerTarget": "firebase-chat:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }

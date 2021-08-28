@@ -1,0 +1,10 @@
+<div class="card mt-2" *ngFor="let contato of contatos | async" [class.bg-light]="userId == contato.id">
+    <div class="card-body">
+        <p class="card-text">{{contato.id}} - {{contato.displayName}}</p>
+    </div>
+    <div class="card-footer">
+        <button type="button" class="btn btn-default" (click)="edit(contato, contato.key)">Editar</button>
+        <button type="button" class="btn btn-danger mx-2" (click)="delete(contato.key)">Excluir</button>
+        <button type="button" class="btn btn-primary mx-2" (click)="changeUserId.emit(contato.id)">Usar</button>
+    </div>
+</div>
